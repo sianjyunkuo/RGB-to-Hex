@@ -1,0 +1,52 @@
+.red .blue .green{
+  display: float;
+  float: left;
+}
+.red-box{
+  width: 30px;
+  height: 30px;
+  float: right;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.red-box {
+  background-color: red;
+}
+
+.green-box {
+  background-color: green;
+}
+
+.blue-box {
+  background-color: blue;
+}
+
+.blue-box {
+  width: 30px;
+  height: 30px;
+  float: right;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.green-box {
+  width: 30px;
+  height: 30px;
+  float: right;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.hex-box {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  display: block;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+.clearfix{
+  clear: both;
+}

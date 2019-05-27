@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container row">
+    <!--   left side -->
+    <form class="leftSide col-8 form">
+      <!--     RGB section -->
+      <h3 class="RGB">RGB</h3>
+      <div class="form-group row clearfix">
+        <!--       Red section-->
+        <label for="red" class="col-sm-1  col-form-label">R:</label>
+        <div class="red clearfix">
+          <input type="text" id="red" class="form-control-sm" oninput="if(value>255)value=255"
+            onkeyup="value=value.replace(/[^\d]/g,'')" onblur="value=value.replace(/[^\d]/g,'')"
+            placeholder="Please input 0 ~ 255 ">
+          <div class="red-box"></div>
+        </div>
+      </div>
+      <!--     Green section -->
+      <div class="form-group row">
+        <label for="green" class="col-sm-1  col-form-label">G:</label>
+        <div class="green">
+          <input type="text" id="green" class="form-control-sm" oninput="if(value>255)value=255"
+            onkeyup="value=value.replace(/[^\d]/g,'')" onblur="value=value.replace(/[^\d]/g,'')"
+            placeholder="Please input 0 ~ 255 ">
+          <div class="green-box"></div>
+        </div>
+      </div>
+      <!--     Blue section -->
+      <div class="form-group row">
+        <label for="blue" class="col-sm-1  col-form-label">B:</label>
+        <div class="blue">
+          <input type="text" id="blue" class="form-control-sm" oninput="if(value>255)value=255"
+            onkeyup="value=value.replace(/[^\d]/g,'')" onblur="value=value.replace(/[^\d]/g,'')"
+            placeholder="Please input 0 ~ 255 ">
+          <div class="blue-box"></div>
+        </div>
+      </div>
+      <!--     submit button -->
+      <div class="form-group row">
+        <button type="submit" class="btn btn-primary submit ml-3">Submit</button>
+      </div>
+    </form>
+    <!--   right side -->
+    <div class="rightSide col-4">
+      <!--     HEX section -->
+      <h3 class="HEX">HEX</h3>
+      <input type="text" class="form-control form-control-sm form-control-plaintext hex-value border-0" value="#000000"
+        readonly>
+      <div class="hex-box">
+        <!--       color -->
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
