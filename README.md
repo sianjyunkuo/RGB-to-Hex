@@ -7,3 +7,5 @@ This is a simple web application for transfer RGB to Hex.
 
 ### Change color
 inputing three numbers in RGB between 0~255 can produce color in Hex.
+
+Link: https://sianjyunkuo.github.io/RGB-to-Hex/
